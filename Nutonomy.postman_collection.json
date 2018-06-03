@@ -1,0 +1,84 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Nutonomy",
+		"_postman_id": "11fb098c-93a6-dcb4-a41a-7938d5755a16",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/v1/book",
+			"request": {
+				"url": "http://localhost:8080/api/v1/book",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"customerPosition\":{\n\t\"x\" : -1,\n\t\"y\" : -1\n\t},\n\t\"destination\":{\n\t\"x\" : -1,\n\t\"y\" : -2\n\t}\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/bookACar",
+			"request": {
+				"url": "http://localhost:8080/api/v1/bookACar",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"car_id\" : 1,\n\t\"customerId\" : \"C1\",\n\t\n\t\"customerCurrentPosition\":{\n\t\"x\" : -1,\n\t\"y\" : -1\n\t},\n\t\n\t\"customerDestinationPosition\":{\n\t\"x\" : -1,\n\t\"y\" : -2\n\t}\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/cars",
+			"request": {
+				"url": "http://localhost:8080/api/v1/cars",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/tick",
+			"request": {
+				"url": "http://localhost:8080/api/v1/tick",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/reset",
+			"request": {
+				"url": "http://localhost:8080/api/v1/reset",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
